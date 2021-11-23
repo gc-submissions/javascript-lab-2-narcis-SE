@@ -1,13 +1,12 @@
 "use strict";
 
 //arrow function to declare random damage 1-10
-const randomDamage = () => Math.floor(Math.random() * (11-1) + 1); 
+const randomDamage = () => Math.floor(Math.random() * (11-1) + 1);
 
 
 //Arrow function:
 const chooseOption = (opt1, opt2) => {
     let randNum = Math.round((Math.random()*(1))); 
-
     return(randNum === 0 ? opt1: opt2);
 }  
 
@@ -16,7 +15,7 @@ function attackPlayer(health){
 }
 
 const logHealth = (player, health) =>{
-    console.log(player + " and health: " + health); 
+    console.log(player + " health: " + health); 
 }
 
 const logDeath = (winner, loser) => {
